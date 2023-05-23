@@ -1,0 +1,27 @@
+@charset "ISO-8859-1";
+
+
+.body{
+	margin: 0px 200px;
+}
+
+.header{
+	background-color: white;
+	justify-content: space-evenly;
+    align-items: center;	
+    
+}
+
+.header img{
+	width: 400px;
+	height: 150px;
+	display: flex;
+	position: relative;
+}
+
+.menu ul li{
+	position: relative;
+	list-style-type:none;
+	margin-left: 70px;
+	right: 100px;
+}
