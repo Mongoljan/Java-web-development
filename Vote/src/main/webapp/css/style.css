@@ -62,7 +62,7 @@ body {
   position: relative;
   list-style-type: none;
   margin-left: 70px;
-  right: 100px;
+  left: 50px;
 }
 .menu ul li a {
   text-decoration: none;
