@@ -1,30 +1,31 @@
 <%@page contentType="text/html; charset=UTF-8" %>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Sign Up</title>
+<meta charset="ISO-8859-1">
+<title>Sing Up</title>
 
-<!-- Font Icon -->
-<link rel="stylesheet"
-	href="fonts/material-icon/css/material-design-iconic-font.min.css">
-
-<!-- Main css -->
-<link rel="stylesheet" href="css/sing.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-	<div class="main">
+<input type="hidden" id="status" value="<%=request.getAttribute("status")%>"> 
+<div class="main">
 		<div class="image1">
 			<img alt="login" src="img/Muis_logo.jpg" style="width:1200px; height:990px;">
 		</div>
 		<!-- Sign up form -->
 		<section class="signup">
-			<div class="container">
+			<div class="container_singup">
 				<div class="signup-content">
+									<div class="signup-image">
+						<figure>
+							<img src="img/muis-logo.png" alt="sing up image">
+						</figure>
+						<a href="login.jsp" class="signup-image-link" >I am already
+							member</a>
+					</div>
 					<div class="signup-form">
+
 						<h2 class="form-title">Sign up</h2>
 						<form method="post" action="register" class="register-form"
 							id="register-form">
@@ -64,22 +65,21 @@
 							</div>
 						</form>
 					</div>
-					<div class="signup-image">
-						<figure>
-							<img src="img/muis-logo.png" alt="sing up image">
-						</figure>
-						<a href="login.jsp" class="signup-image-link">I am already
-							member</a>
-					</div>
 				</div>
 			</div>
 		</section>
 
 
 	</div>
-
-
-
+	<!-- JS -->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	
+	<script type="text/javascript">
+		var status = document.getElementById("status").value;
+		if(status == "success"){
+			swal("Congrats","Account Created Successfully","success");
+		}
+	</script>
 </body>
-<!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>
