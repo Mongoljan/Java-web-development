@@ -1,4 +1,5 @@
 @charset "ISO-8859-1";
+@charset "UTF-8";
 body {
   margin: 0;
 }
@@ -73,7 +74,8 @@ body {
   background-color: #f3f3f3;
 }
 #news .vote_list {
-  width: 1200px;
+	margin-left:100px;
+ 	width: 1200px;
 }
 #news .description {
   width: 500px;
@@ -208,8 +210,91 @@ body {
 }
 
 .signup-image-link {
-  font-size: 14px;
+  font-size: 22px;
   color: #222;
   display: block;
   text-align: center;
 }
+
+/*Vote css*/
+.radio-container {
+    display: inline-block;
+    margin-right: 7px;
+    margin-top:10px;
+    
+  }
+  
+  .include{
+   background-color: white; width:110px; height:40px; border-radius:10px; margin-bottom:30px;}
+  .radio-input {
+    display: none;
+  }
+  
+  .radio-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius:7px;
+    color:black;
+  }
+  
+  .radio-input:checked + .radio-button {
+    background-color: #f5f763
+    
+  }
+  .vote_component {
+  margin-top:10px;
+  margin-bottom:10px;
+  }
+  .include:hover{
+  background-color:#f5f763;
+  cursor:pointer;
+  }
+  
+  
+  /*Sing up Css*/
+  
+  .main {
+  background: #f8f8f8;
+  display: flex;
+  width:100%;}
+   .signup {
+   width:800px;
+  background-color:white;}
+
+
+.signup-image {
+  margin: 0 55px; }
+
+.form-title {
+  margin-bottom: 33px; 
+  margin-left:50px;}
+
+.signup-image {
+  margin-top: 45px; }
+
+figure {
+  margin-bottom: 50px;
+  text-align: center; }
+
+.form-submit {
+  display: inline-block;
+  background: #6dabe4;
+  color: #fff;
+  border-bottom: none;
+  width: auto;
+  padding: 15px 39px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  margin-top: 25px;
+  cursor: pointer; }
+  .form-submit:hover {
+    background: #4292dc; }
+  
+
+
